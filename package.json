@@ -1,0 +1,29 @@
+{
+  "name": "trello-desktop",
+  "author": "Jan Kofroň",
+  "description": "Electron-based Trello board app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder -l AppImage"
+  },
+  "build": {
+    "appId": "com.github.jankofron.trello-desktop",
+    "linux": {
+      "category": "Utility",
+      "icon": "assets/icons",
+      "target": [
+        "AppImage"
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-store": "^11.0.2"
+  },
+  "devDependencies": {
+    "electron": "^38.4.0",
+    "electron-builder": "^26.0.12"
+  }
+}
